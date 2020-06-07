@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h2>This is a task manager application</h2>
+    <br />
+    <p>In order to create a user: POST name, email, password {{url}}/users</p>
+    <p>Log in: POST email, password {{url}}/login</p>
+    <p>Read profile: GET {{url}}/users/me</p>
+    <p>Update profile: PATCH {{url}}/users/me</p>
+    <p>Delete user: DELETE {{url}}/users/me</p>
+    <p>Upload avatar: POST {{url}}/users/me/avatar</p>
+    <p>Get avatar: GET {{url}}/users/avatar/id</p>
+    <p>Delete avatar: DELETE {{url}}/users/me/avatar</p>
+    <p>Logout: POST {{url}}/users/logout</p>
+    <p>Logout from all devices: POST {{url}}/users/logoutall</p>
+
+    <br />
+    <p>In order to create a task: POST description, status {{url}}/tasks</p>
+    <p>Read tasks: GET {{url}}/tasks</p>
+    <p>
+      Read tasks in descending order: GET {{url}}/tasks?sortBy=createdAt:desc
+    </p>
+    <p>Delete task: DELETE {{url}}/tasks/id</p>
+    <p>Update Task: PATCH {{url}}/tasks/id</p>
+  </body>
+</html>
